@@ -68,7 +68,11 @@ class PDFextract
 	def cleanup
 		`rm -r #{base_dir}`
 	end
+	def remove_protection
+		#todo
 
+	end
+	
 	def process_pages
 		pages.each do |page|
 			if page[:match] == "page_num"
